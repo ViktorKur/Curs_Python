@@ -33,18 +33,34 @@
 # else :
 #   print("Введенное вами число не удовлетворяе условию 1<=n<=100, повторите попытку")
   
-#Вариант Зои
-n = int(input())
-max_warmth = 0
-warmth_streak = 0
+# #Вариант Зои
+# n = int(input())
+# max_warmth = 0
+# warmth_streak = 0
 
-for _ in range(n):
-  temp = int(input())
-  if temp > 0:
-     warmth_streak += 1
-  elif temp <= 0:
-     if max_warmth < warmth_streak:
-       max_warmth = warmth_streak
-       warmth_streak = 0
+# for _ in range(n):
+#   temp = int(input())
+#   if temp > 0:
+#      warmth_streak += 1
+#   elif temp <= 0:
+#      if max_warmth < warmth_streak:
+#        max_warmth = warmth_streak
+#        warmth_streak = 0
 
-print(max_warmth)
+# print(max_warmth)
+
+
+#Вариант Рамина: 
+n = int(input("Введите число: "))
+count = 0
+result = 0
+
+for i in range(n) :
+   temp = int(input(f"{i + 1}-день: "))
+   if(temp > 0) :
+      count = count + 1
+      if(count > result) :
+         result = count
+   else :
+    count = 0
+print(f"Количество дней с средней температурой больше 0 градусов: {result}")
