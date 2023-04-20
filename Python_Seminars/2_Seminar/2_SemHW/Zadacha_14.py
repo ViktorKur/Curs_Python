@@ -4,8 +4,8 @@
 
 n=int(input("Введите целочисленное число N: "))
 i,st=0,0
-while st<n:
+while st<=n:
   print(st)
   st=2**i
   i+=1
-  
+
