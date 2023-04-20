@@ -16,8 +16,7 @@ for i in list_dict:
     word = w_list[0]
     word_clear = word.strip()
     n_list.append(word_clear)
-
-# print(set(n_list))
+print(set(n_list))
 
 # dict = [{"V": "S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {"VII": " S005 "}, {" V ":" S009 "}, {" VIII ":" S007 "}]
 # result_set = set()
