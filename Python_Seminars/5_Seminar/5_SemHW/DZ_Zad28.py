@@ -35,9 +35,12 @@ def SumCh(n,k):
     return n
   return SumCh(n+1,k-1)
   
-a = abs(int(input("Ввведите целое неотрицательное число А: ")))
-b = abs(int(input("Ввведите целое неотрицательное число В: ")))
-if a>=b:
-  print(f"{a} + {b} = {SumCh(a,b)}")  
+a = int(input("Ввведите целое неотрицательное число А: "))
+b = int(input("Ввведите целое неотрицательное число В: "))
+if a>0 and b>0:
+  if a>=b:
+    print(f"{a} + {b} = {SumCh(a,b)}")  
+  else :
+    print(f"{b} + {a} = {SumCh(b,a)}")  
 else :
-  print(f"{b} + {a} = {SumCh(b,a)}")  
+  print("Вводимые числа должны быть неотрицательными и целыми числами, попробуйте заново")
