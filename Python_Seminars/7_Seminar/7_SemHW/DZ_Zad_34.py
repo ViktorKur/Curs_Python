@@ -32,10 +32,10 @@ def glasProv(stih,slovargl):
     for sl in slovargl: 
       count1+=puhostih[i].count(sl)
     glas.append(count1)
-  if len(set(glas))==1:
+  if sum(glas)%len(glas)==0  and sum(glas)!=0 and len(set(glas))==1:
     return 'В стихотворении есть ритм :  Парам пам-пам'
   else:
-    return 'В стихотворении нет ритма :  Пам парам'
+    return 'В стихотворении нет ритма :  Пам парам'  
     
 slovarRu=['ё','й','ц','у','к','е','н','г','ш','щ','з','х','ъ','ф','ы','в','а','п','р','о','л','д','ж','э','я','ч','с','м','и','т','ь','б','ю','-',' ']
 slovarEn=['q','w','e','r','t','y','u','i','o','p','a','s','d','f','g','h','j','k','l','z','x','c','v','b','n','m','-',' ']

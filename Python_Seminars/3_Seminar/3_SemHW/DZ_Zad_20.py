@@ -25,10 +25,10 @@
 
 print("\033[H\033[J")
 idic,col={},0 
-inglDict = {1:'AEIOULNSTRАВЕИНОРСТ', 2:'DGДКЛМПУ', 3:'BCMPБГЁЬЯ', 4:'FHVWYЙЫ', 5:'KЖЗХЦЧ', 8:'JXШЭЮ', 10:'QZФЩЪ'}
+inglRusDict = {1:'AEIOULNSTRАВЕИНОРСТ', 2:'DGДКЛМПУ', 3:'BCMPБГЁЬЯ', 4:'FHVWYЙЫ', 5:'KЖЗХЦЧ', 8:'JXШЭЮ', 10:'QZФЩЪ'}
 # rusDict = {1:'АВЕИНОРСТ', 2:'ДКЛМПУ', 3:'БГЁЬЯ', 4:'ЙЫ', 5:'ЖЗХЦЧ', 8:'ШЭЮ', 10:'ФЩЪ'}
 sl=str(input("Введите слово: ")).upper()
-for (ky,st) in inglDict.items():
+for (ky,st) in inglRusDict.items():
   j,st1=0,[]
   for i in st:
     st1.append(i)

@@ -16,13 +16,13 @@
 # 6 12 18 24 30 36
 
 print("\033[H\033[J")
-a =int(input("Введите кол-во элементов матрицы по вертикали?: "))
-b= int(input("Введите кол-во элементов матрицы по горизонтали?: "))
+rows =int(input("Введите кол-во элементов матрицы по вертикали?: "))
+columns = int(input("Введите кол-во элементов матрицы по горизонтали?: "))
 
 def print_operation_table(operation, num_rows, num_columns):
-    a = [[operation(i, j) for j in range(1, num_columns + 1)] for i in range(1, num_rows + 1)]
-    # print(a)
-    for i in a:
-        print(*[f"{x:>4}" for x in i])
+    tabl = [[operation(i, j) for j in range(1, num_columns + 1)] for i in range(1, num_rows + 1)]
+    # print(tabl)
+    for i in tabl:
+        print(*[f"{zn:>4}" for zn in i])
 
-print_operation_table(lambda x, y: x * y, a, b)
+print_operation_table(lambda x, y: x * y, rows, columns)  
